@@ -1,0 +1,154 @@
+/* my reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* my code */
+
+/* HEADER */
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    /* fixed */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header a {
+    margin-left: 10px;
+    font-family: 'Courgette', cursive;
+    color: rgba(255, 255, 255, 0.897);
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+header a:hover {
+    color: orangered;
+}
+
+form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.formStyle {
+    width: 140px;
+    height: 30px;
+    background-color: rgba(185, 185, 185, 0.582);
+    /* text */
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.formStyle option {
+    background-color: black;
+}
+
+.formStyle:hover {
+    background-color: orangered;
+    cursor: pointer;
+    border: 1px solid orangered;
+}
+
+/* MAIN PAGE */
+#container {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.create {
+    align-self: center;
+    margin: 20px;
+    background-color: rgba(255, 68, 0, 0.705);
+    width: 280px;
+    height: 200px;
+    /* puts the item to the right until 9001th item... */
+    order: 9000;
+}
+
+.create h1 {
+    margin-top: 78px;
+    font-size: 42px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.create:hover {
+    cursor: pointer;
+    border: 1px solid white;    
+}
+
+.box {
+    margin: 20px;
+    background-color: rgba(32, 32, 32, 0.705);
+    width: 300px;
+    height: 350px;
+    border: 2px solid rgb(233, 233, 233);
+    text-align: center;
+}
+
+.inputstlye {
+    margin-top: 154px;
+    width: 75%;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+}
+
+.box:hover {
+    border: 2px solid orangered;    
+}
+
+/* backgrounds */
+
+.default {
+    background-image: url(imgs/Lady.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cooking {
+    background-image: url(imgs/Cooking.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.finance {
+    background-image: url(imgs/Busy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.garden {
+    background-image: url(imgs/Flowers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
